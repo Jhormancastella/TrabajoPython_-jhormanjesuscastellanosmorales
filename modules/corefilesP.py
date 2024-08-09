@@ -1,7 +1,7 @@
 import json
 import os
 
-MY_DATABASEP = 'data/especialistas.json'
+MY_DATABASEP = 'data/vetas.json'
 
 def NewFile(data):
     try:

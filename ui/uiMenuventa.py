@@ -4,7 +4,7 @@ import funciones.Menuventa as fsp
 import funciones.menucompras as fic
 import main
 
-def MenuEspecialista(op: int):
+def MenuVentas(op: int):
     title = """
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
    ⚕️  🧑‍⚕️  MODULO MENU COMPRAS  👩‍⚕️  ⚕️
@@ -29,7 +29,7 @@ def MenuEspecialista(op: int):
         match op:
             case 1:
                 try:
-                    fsp.NewEspecialista()
+                    fsp.Newventa()
                 except Exception as e:
                     print("Error al agregar especialista:", e)
                 else:

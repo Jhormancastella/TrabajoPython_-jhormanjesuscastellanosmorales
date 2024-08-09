@@ -4,17 +4,17 @@ import funciones.ConsultarResultados as pt
 import funciones.resultado as frt
 import main
 
-def MenuConsulta(op: int):
+def MenuRegistro(op: int):
     title = """
     *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣  
     *️⃣ *️⃣    MODULO ADMIN CONSULTA Y RESULTADOS CENTRO CLINICO  *️⃣ *️⃣
     *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ *️⃣ 
     """
-    MenuConsultaOp = '1. Agendar Cita\n2. Ver Resultados\n3. Salir'
+    MenuRegistroOp = '1. Agendar Cita\n2. Ver Resultados\n3. Salir'
     gf.borrar_pantalla()
     if op != 3:
         print(title)
-        print(MenuConsultaOp)
+        print(MenuRegistro)
         while True:
             try:
                 op = int(input(":) "))
@@ -24,7 +24,7 @@ def MenuConsulta(op: int):
             except ValueError as e:
                 print("Error:", e)
                 gf.pausar_pantalla()
-                MenuConsulta(0)
+                MenuRegistro(0)
 
         match op:
             case 1:

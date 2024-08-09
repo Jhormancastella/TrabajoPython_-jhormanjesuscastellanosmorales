@@ -3,7 +3,7 @@ import funciones.globales as gf
 import modules.corefilesP as cfp
 import ui.uiMenuventa as uipc
 
-def NewEspecialista():
+def Newventa():
     title = """
     *****************************
     * REGISTRO DE ESPECIALISTAS *
@@ -12,11 +12,9 @@ def NewEspecialista():
     gf.borrar_pantalla()
     print(title)
     
-    identificacion = input("Ingrese el Nro de Identificacion: ")
-    codEspecialista = input("Ingrese Codigo del especialista: ")
-    nombreEspecialista = input("Ingrese Nombre del especialista: ")
-    correoElectronico = input("Ingrese Correo Electrónico del especialista: ")
-    telefono = input("Ingrese Teléfono del especialista: ")
+    identificacion = input("Ingrese el Nro de producto: ")
+    codEspecialista = input("Ingrese Codigo del Producto: ")
+    nombreEspecialista = input("Ingrese Nombre del Producto: ")
     print("Seleccione Especialización:")
     print("1. Pediatría")
     print("2. Ginecología")

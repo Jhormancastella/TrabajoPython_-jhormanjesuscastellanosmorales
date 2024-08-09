@@ -1,13 +1,27 @@
 import modules.corefiles as cf
 import funciones.globales as gf
 import funciones.Menuventa as fsp
-import funciones.iraconsulta as fic
+import funciones.menucompras as fic
 import main
 
+<<<<<<< HEAD
 def menuVenta(op: int):
     title = """
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
    ⚕️  🧑‍⚕️  MODULO ADMIN Ventas 👩‍⚕️  ⚕️
+=======
+<<<<<<< HEAD
+def MenuVentas(op: int):
+    title = """
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+   ⚕️  🧑‍⚕️  MODULO MENU COMPRAS  👩‍⚕️  ⚕️
+=======
+def menuVenta(op: int):
+    title = """
+    ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
+   ⚕️  🧑‍⚕️  MODULO ADMIN Ventas 👩‍⚕️  ⚕️
+>>>>>>> desarrollo
+>>>>>>> main
     ➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖➖〰️➖⚕️➖〰️➖
     """
     menuVentaOp = '1. Agregar\n2. Editar\n3. ir a consulta\n4. eliminar\n5. Salir'
@@ -24,18 +38,34 @@ def menuVenta(op: int):
             except ValueError as e:
                 print("Error:", e)
                 gf.pausar_pantalla()
+<<<<<<< HEAD
                 menuVenta(0)
+=======
+<<<<<<< HEAD
+                MenuVentas(0)
+=======
+                menuVenta(0)
+>>>>>>> desarrollo
+>>>>>>> main
 
         match op:
             case 1:
                 try:
-                    fsp.NewEspecialista()
+                    fsp.Newventa()
                 except Exception as e:
                     print("Error al agregar venta:", e)
                 else:
                     print("venta agregado exitosamente")
                 gf.pausar_pantalla()
+<<<<<<< HEAD
                 menuVenta(0)
+=======
+<<<<<<< HEAD
+                MenuVentas(0)
+=======
+                menuVenta(0)
+>>>>>>> desarrollo
+>>>>>>> main
 
             case 2:
                 try:
@@ -45,7 +75,15 @@ def menuVenta(op: int):
                 else:
                     print("Datos de la venta editado exitosamente")
                 gf.pausar_pantalla()
+<<<<<<< HEAD
                 menuVenta(0)
+=======
+<<<<<<< HEAD
+                MenuVentas(0)
+=======
+                menuVenta(0)
+>>>>>>> desarrollo
+>>>>>>> main
 
             case 3:
                 try:
@@ -53,7 +91,15 @@ def menuVenta(op: int):
                 except Exception as e:
                     print("Error al ir a consulta:", e)
                 gf.pausar_pantalla()
+<<<<<<< HEAD
                 menuVenta(0)
+=======
+<<<<<<< HEAD
+                MenuVentas(0)
+=======
+                menuVenta(0)
+>>>>>>> desarrollo
+>>>>>>> main
 
             case 4:
                 try:
@@ -63,7 +109,15 @@ def menuVenta(op: int):
                 else:
                     print("Especialista eliminado exitosamente")
                 gf.pausar_pantalla()
+<<<<<<< HEAD
                 menuVenta(0)
+=======
+<<<<<<< HEAD
+                MenuVentas(0)
+=======
+                menuVenta(0)
+>>>>>>> desarrollo
+>>>>>>> main
 
             case 5:
                 main.mainMenu(0)
@@ -71,4 +125,12 @@ def menuVenta(op: int):
             case _:
                 print("La opción ingresada no está disponible en las opciones")
                 gf.pausar_pantalla()
+<<<<<<< HEAD
                 menuVenta(0)
+=======
+<<<<<<< HEAD
+                MenuVentas(0)
+=======
+                menuVenta(0)
+>>>>>>> desarrollo
+>>>>>>> main

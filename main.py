@@ -24,7 +24,11 @@ def mainMenu(op):
             mainMenu(0)
         else:
             if opcion == 1:
+<<<<<<< HEAD
                 uiSp.MenuVentas(0)
+=======
+                uiSp.menuVenta(0)
+>>>>>>> desarrollo
             elif opcion == 2:
                 uiPt.MenuCompras(0)
             elif opcion == 3:

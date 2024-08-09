@@ -1,7 +1,7 @@
 import json
 import os
 
-MY_DATABASE = 'data/pacientes.json'
+MY_DATABASE = 'data/compras.json'
 
 def NewFile(data):
     try:

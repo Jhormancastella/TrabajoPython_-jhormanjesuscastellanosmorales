@@ -3,17 +3,17 @@ import funciones.globales as gf
 import funciones.Paciente as pt
 import main
 
-def MenuPacientes(op: int):
+def MenuCompras(op: int):
     title = """
     🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
     🕛 MODULO MENUCOMPRAS 🕛
     🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
     """
-    menuPacienteOp = '1. Agregar\n2. Editar\n3. Eliminar\n4. Salir'
+    MenuComprasOp = '1. Agregar\n2. Editar\n3. Eliminar\n4. Salir'
     gf.borrar_pantalla()
     if op != 4:
         print(title)
-        print(menuPacienteOp)
+        print(MenuComprasOp)
         while True:
             try:
                 op = int(input(":) "))
@@ -23,7 +23,7 @@ def MenuPacientes(op: int):
             except ValueError as e:
                 print("Error:", e)
                 gf.pausar_pantalla()
-                MenuPacientes(0)
+                MenuCompras(0)
 
         match op:
             case 1:
@@ -34,7 +34,7 @@ def MenuPacientes(op: int):
                 else:
                     print("Paciente agregado exitosamente")
                 gf.pausar_pantalla()
-                MenuPacientes(0)
+                MenuCompras(0)
 
             case 2:
                 try:
@@ -44,7 +44,7 @@ def MenuPacientes(op: int):
                 else:
                     print("Datos del paciente editados exitosamente")
                 gf.pausar_pantalla()
-                MenuPacientes(0)
+                MenuCompras(0)
 
             case 3:
                 try:
@@ -54,7 +54,7 @@ def MenuPacientes(op: int):
                 else:
                     print("Paciente eliminado exitosamente")
                 gf.pausar_pantalla()
-                MenuPacientes(0)
+                MenuCompras(0)
 
             case 4:
                 main.mainMenu(0)
@@ -62,4 +62,4 @@ def MenuPacientes(op: int):
             case _:
                 print("La opción ingresada no está disponible en las opciones")
                 gf.pausar_pantalla()
-                MenuPacientes(0)
+                MenuCompras(0)

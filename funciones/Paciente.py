@@ -8,16 +8,16 @@ from datetime import datetime
 def NewPaciente():
     title = """
     ***************************
-    * REGISTRO DE PACIENTES *
+    * REGISTRO DE Clientes *
     ***************************
     """
     gf.borrar_pantalla()
     print(title)
     try:
-        identificacion = input("Ingrese el Nro de Identificacion: ")
-        codPaciente = input("Ingrese Codigo del paciente: ")
-        nombrePaciente = input("Ingrese Nombre del paciente: ")
-        apellidos = input("Ingrese Apellidos del paciente: ")
+        identificacion = input("Ingrese el Nro de cliente: ")
+        codPaciente = input("Ingrese Codigo del cliente: ")
+        nombrePaciente = input("Ingrese Nombre del cliente: ")
+        apellidos = input("Ingrese Apellidos del cliente: ")
         telefono = input("Ingrese Número telefónico: ")
         celular = input("Ingrese Número celular: ")
         fecha_nacimiento = input("Ingrese Fecha de nacimiento (formato dd-mm-yyyy): ")

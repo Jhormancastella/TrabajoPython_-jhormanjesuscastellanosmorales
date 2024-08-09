@@ -26,9 +26,9 @@ def mainMenu(op):
             if opcion == 1:
                 uiSp.MenuVentas(0)
             elif opcion == 2:
-                uiPt.MenuPacientes(0)
+                uiPt.MenuCompras(0)
             elif opcion == 3:
-                uiC.MenuConsulta(0)
+                uiC.MenuRegistro(0)
             elif opcion == 4:
                 print("Regrese pronto ....")
                 fg.pausar_pantalla()

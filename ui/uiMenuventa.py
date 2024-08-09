@@ -24,7 +24,7 @@ def MenuVentas(op: int):
             except ValueError as e:
                 print("Error:", e)
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuVentas(0)
 
         match op:
             case 1:
@@ -35,7 +35,7 @@ def MenuVentas(op: int):
                 else:
                     print("Especialista agregado exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuVentas(0)
 
             case 2:
                 try:
@@ -45,7 +45,7 @@ def MenuVentas(op: int):
                 else:
                     print("Datos del especialista editados exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuVentas(0)
 
             case 3:
                 try:
@@ -53,7 +53,7 @@ def MenuVentas(op: int):
                 except Exception as e:
                     print("Error al ir a consulta:", e)
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuVentas(0)
 
             case 4:
                 try:
@@ -63,7 +63,7 @@ def MenuVentas(op: int):
                 else:
                     print("Especialista eliminado exitosamente")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuVentas(0)
 
             case 5:
                 main.mainMenu(0)
@@ -71,4 +71,4 @@ def MenuVentas(op: int):
             case _:
                 print("La opción ingresada no está disponible en las opciones")
                 gf.pausar_pantalla()
-                MenuEspecialista(0)
+                MenuVentas(0)

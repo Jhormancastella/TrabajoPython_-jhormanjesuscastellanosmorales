@@ -6,7 +6,7 @@ import main
 def MenuPacientes(op: int):
     title = """
     🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
-    🕛 MODULO ADMIN PACIENTES CENTRO CLINICO  🕛
+    🕛 MODULO MENUCOMPRAS 🕛
     🕛🕧🕐🕜🕑🕝🕒🕞🕓🕟🕔🕠🕕🕡🕖🕢🕗🕣🕘🕤🕙🕥
     """
     menuPacienteOp = '1. Agregar\n2. Editar\n3. Eliminar\n4. Salir'

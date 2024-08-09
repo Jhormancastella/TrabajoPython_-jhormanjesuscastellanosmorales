@@ -38,8 +38,8 @@ def mainMenu(op):
                 mainMenu(0)
 
 if __name__ == '__main__':
-    cf.MY_DATABASE = 'data/pacientes.json'
-    cfp.MY_DATABASEP = 'data/especialistas.json'
+    cf.MY_DATABASE = 'data/venta.json'
+    cfp.MY_DATABASEP = 'data/compras.json'
     cf.checkFile(fg.centroClinico)
     cfp.checkFile(fg.centroClinico)
     mainMenu(0)

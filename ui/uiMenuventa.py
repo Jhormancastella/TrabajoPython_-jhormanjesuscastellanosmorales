@@ -1,7 +1,7 @@
 import modules.corefiles as cf
 import funciones.globales as gf
 import funciones.Menuventa as fsp
-import funciones.iraconsulta as fic
+import funciones.menucompras as fic
 import main
 
 def MenuEspecialista(op: int):
